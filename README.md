@@ -1,0 +1,1 @@
+# base-structure-folder-go
