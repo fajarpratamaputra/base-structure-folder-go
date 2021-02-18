@@ -3,6 +3,7 @@ module mvc-api
 go 1.14
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/facebookgo/ensure v0.0.0-20200202191622-63f1cf65ac4c // indirect
 	github.com/facebookgo/subset v0.0.0-20200203212716-c811ad88dec4 // indirect
 	github.com/gin-gonic/gin v1.6.3
