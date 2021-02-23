@@ -10,6 +10,7 @@ require (
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/jinzhu/gorm v1.9.16
+	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/mailgun/mailgun-go/v4 v4.3.3
 	github.com/pkg/errors v0.9.1 // indirect
