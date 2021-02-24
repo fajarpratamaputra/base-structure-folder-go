@@ -26,7 +26,10 @@ func main() {
 	}
 	defer Config.DB.Close()
 	Config.DB.AutoMigrate(&Models.User{})
+
+	// the jwt middleware
 	r := Routes.SetupRouter()
+
 	//running
 	port := os.Getenv("PORT")
 
