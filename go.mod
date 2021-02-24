@@ -3,12 +3,15 @@ module mvc-api
 go 1.14
 
 require (
+	github.com/appleboy/gin-jwt/v2 v2.6.4
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/facebookgo/ensure v0.0.0-20200202191622-63f1cf65ac4c // indirect
 	github.com/facebookgo/subset v0.0.0-20200203212716-c811ad88dec4 // indirect
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/jinzhu/gorm v1.9.16
+	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/kr/pretty v0.1.0 // indirect
 	github.com/mailgun/mailgun-go/v4 v4.3.3
 	github.com/pkg/errors v0.9.1 // indirect
