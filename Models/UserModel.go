@@ -8,6 +8,17 @@ type User struct {
 	Address string `json:"address"`
 }
 
+type Book struct {
+	ID     uint   `json:"id" gorm:"primary_key"`
+	Title  string `json:"title"`
+	Author string `json:"author"`
+}
+
+// type TodoModel struct {
+// 	gorm.Model
+// 	Name string `json:"name"`
+// }
+
 func (b *User) TableName() string {
 	return "user"
 }

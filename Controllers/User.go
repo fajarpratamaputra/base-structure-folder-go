@@ -7,6 +7,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 //GetUsers ... Get all users
@@ -31,6 +32,22 @@ func CreateUser(c *gin.Context) {
 	} else {
 		c.JSON(http.StatusOK, user)
 	}
+}
+
+//CreateUser ... Create User
+func CreateNewUser(c *gin.Context) {
+	user := Models.User{
+		Name:    c.PostForm("name"),
+		Email:   c.PostForm("email"),
+		Phone:   c.PostForm("phone"),
+		Address: c.PostForm("address"),
+	}
+	Models.CreateUser(&user)
+	c.JSON(http.StatusCreated,
+		gin.H{
+			"status":     http.StatusCreated,
+			"message":    "created successfully!",
+			"resourceId": user.Id})
 }
 
 //GetUserByID ... Get the user by id
